@@ -13,3 +13,10 @@ my homebrew formulae
 brew tap mutsune/mutsune https://github.com/mutsune/homebrew-mutsune
 brew install FORMULA
 ```
+
+## Create formula
+
+```sh
+brew create DOWNLOAD_URL --set-name FORMULA_NAME
+brew audit --new-formula --fix FORMULA_FILE
+```
