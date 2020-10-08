@@ -12,9 +12,10 @@ class Sshpass < Formula
            "--disable-dependency-tracking",
            "--disable-silent-rules",
            "--prefix=#{prefix}"
+    system "make", "install"
   end
 
   test do
-    system "sshpass", "-h"
+    system "sshpass"
   end
 end
